@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox6.3</title>
+    <style>
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 450px;
+        background-color: lightpink;
+        margin: 60px auto;
+      }
+      .container .main {
+        display: flex;
+        flex-direction: row;
+        flex: 5;
+        justify-content: space-between;
+      }
+      .header {
+        background-color: rgb(18, 236, 236);
+        flex: 1;
+        margin: 20px 20px 0 20px;
+        text-align: center;
+    
+      }
+      .footer {
+        background-color: rgb(101, 193, 255);
+        flex: 1;
+        margin: 0 20px 20px 20px;
+      }
+      .aside {
+        background-color: rgb(16, 129, 129);
+        flex: 1;
+        margin: 20px 0 20px 20px;
+      }
+      .article {
+        background-color: rgb(8, 125, 192);
+        flex: 3;
+        margin: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+      }
+      .gambar img {
+        width: 125px;
+        height: 100px;
+        background-color: lightpink;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="main">
+        <div class="aside">Aside</div>
+        <div class="article">
+          <div class="gambar gambar1"><img src="foto.jpg" alt=""></div>
+          <div class="gambar gambar2"><img src="foto.jpg" alt=""></div>
+          <div class="gambar gambar3"><img src="foto.jpg" alt="" ></div>
+        </div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
