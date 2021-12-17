@@ -1,0 +1,44 @@
+        <html>
+        <head>
+                <title> Penjumlahan 2 bilangan </title>
+                <script>
+                function getjumlah ()
+                {
+                    //deklarasi variable
+                    var hasil;
+                    var angka1;
+                    var angka2;
+                    //input
+                    angka1 = parseInt(document .
+                    getElementById("txtinput1").
+                    value);
+                
+                    angka2 = parseInt(document .
+                    getElementById("txtinput2").
+                    value);
+                    //proses
+                    hasil = angka1 + angka2;
+                    //output
+                    document.getElementById("txthasil") .value = hasil;
+                }
+                </script>
+                </head>
+                <body>
+                <div>
+                <div>
+                    <label> Masukkan Angka  </label>
+                    <input type="text" id="txtinput1"/>
+                </div>
+                <div>
+                    <label>Masukkan Angka </label>
+                    <input type="text" id="txtinput2"/>
+                </div>
+                <div>
+                    <label> Hasil </label>
+                    <input type="text" id="txthasil"/>
+                </div>
+                <div>
+                    <input type="button" value="jumlah" onclick="getjumlah()"/>
+                </div>
+                </div>
+                </body>
