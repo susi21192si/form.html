@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="id">
+ <head>
+     <title>Login HTML</title>
+ </head>
+ <body style="background-color: rgb(124, 199, 199);">
+     <form action = "" id = "" >
+        <table border="0" align="center">
+            <h1 align="center">Selamat Datang <br> Silahkan Login  </h1>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td> <input type="text" id="nama"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="" id="password"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" onclick="Masuk()">login</button></td>
+            </tr>
+        </table>
+     </form>
+
+     <script>
+        function Masuk() {
+   let nama =document.getElementById("nama").value;;
+   let password =document.getElementById("password").value
+   let uname = "susisusanti29";
+   let pwd = "1234";
+   if (nama == uname && pwd == password) {
+       window.alert("Login berhasil")
+
+   } else {
+       window.alert("Login gagal")
+   }
+}
+    </script>
+ </body>
+ </html>

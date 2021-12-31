@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Peralatan Sekolah</title>
+        <style>
+            img{
+                width: 35%;
+                border: 1px solid blue;
+            }
+        </style>
+        <script>
+            function pilih() {
+                // ambil area select id Peralatan
+                let list_Peralatan = document.getElementById("Peralatan");
+                let idx = list_Peralatan.selectedIndex;
+                console.log("Peralatan index ke- " + idx + "adalah" + list_Peralatan[idx].value);
+                // ambil area object img id = gambar
+                let area_gambar = document.getElementById("gambar")
+                area_gambar.src="gambar/"+list_Peralatan[idx].value+".jpg";
+            }
+        </script>
+    </head>
+
+    <body>
+    <form id="form1">
+        Pilih Peralatan Sekolah : <select id="Peralatan" onchange="pilih()">
+            <option value="Buku">Buku Tulis</option>
+            <option value="Papan tulis">Papan tulis</option>
+            <option value="Penggaris">Penggaris</option>
+            <option value="Penghapus">Penghapus</option>
+            <option value="Pulpen">Pulpen</option>
+            <option value="Tas">Tas</option>
+            <option value="Tempat Pensil">Tempat Pensil</option>
+            <option value="Sepatu">Sepatu</option>
+        </select>
+    </form>
+    <br/>
+    <img src="gambar/buku.jpg" alt="Buku Tulis" id="gambar"/>
+</body>
+</html>
